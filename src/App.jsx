@@ -9,7 +9,7 @@ export default function App() {
     if (isTimerRunning) {
       timerId = setInterval(() => {
         setSeconds((prev) => prev + 1);
-      }, 100);
+      }, 1000);
     }
 
     return () => clearInterval(timerId);
